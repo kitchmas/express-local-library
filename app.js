@@ -21,7 +21,7 @@ app.use(helmet()); //some protection through headers
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = "mongodb://Thomas:123#Test@ds133582.mlab.com:33582/local_library";
+var mongoDB = "mongodb://Thomas:123#Test@ds115583.mlab.com:15583/local_library_production";
 mongoose.connect(mongoDB);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
